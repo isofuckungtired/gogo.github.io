@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活力餐桌</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="new">
+        <button class="menu">&#9776;</button>
+        <h1>活力餐桌</h1>
+        <ul>
+            <li><a href="https://apcs.csie.ntnu.edu.tw/">最新消息</a></li>
+            <li><a href="https://ecourse.nutn.edu.tw/">關於我們</a></li>
+            <li><a href="https://www.google.com/maps">門市據點</a></li>
+            <li><a href="#" id="login-link">會員專區</a></li>
+        </ul>
+    </header>
+    <section class="news">
+        <h2>你的健康我來守護</h2>
+        <p><a href="https://www.youtube.com/">了解更多</a></p>
+    </section>
+    <section class="healthy-tips">
+        <h2>健康小貼士</h2>
+        <div class="tips">
+            <div class="tip">
+                <i class="fas fa-apple-alt"></i>
+                <p>每天吃五份蔬果，保持健康生活。</p>
+            </div>
+            <div class="tip">
+                <i class="fas fa-dumbbell"></i>
+                <p>每天運動至少30分鐘，增強體質。</p>
+            </div>
+            <div class="tip">
+                <i class="fas fa-water"></i>
+                <p>保持足夠的水分攝入，每天喝八杯水。</p>
+            </div>
+        </div>
+    </section>
+    <div class="test">
+        <div class="pp">
+            <div class="tt">管理個人資料</div>
+            <a href="home.html"><img class="pic" src="./image/table.png"></a>
+        </div>
+        <div class="pp">
+            <div class="tt">紀錄日常飲食狀況</div>
+            <a href="home.html"><img class="pic" src="./image/health.jpg"></a>
+        </div>
+        <div class="pp">
+            <div class="tt">搜尋餐廳</div>
+            <a href="home.html"><img class="pic" src="./image/food.jpg"></a>
+        </div>
+        <div class="pp">
+            <div class="tt">推薦食譜</div>
+            <a href="home.html"><img class="pic" src="./image/green.jpg"></a>
+        </div>
+        <div class="pp">
+            <div class="tt">懲罰功能</div>
+            <a href="home.html"><img class="pic" src="./image/hit.jpg"></a>
+        </div>
+    </div>
+    <footer>
+        <h3 id="top"></h3>
+        <a href="#top">回到上頁</a>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>會員登入</h2>
+            <form id="login-form">
+                <label for="username">使用者名稱:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">密碼:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">登入</button>
+            </form>
+            <p>還沒註冊會員？<a href="#" id="register-link">點擊這裡註冊</a></p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-register-button">&times;</span>
+            <h2>會員註冊</h2>
+            <form >
+                <label for="register-username">使用者名稱:</label>
+                <input type="text" id="register-username" name="register-username" required>
+                <label for="register-password">密碼:</label>
+                <input type="password" id="register-password" name="register-password" required>
+                <button type="submit">註冊</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
